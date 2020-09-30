@@ -35,7 +35,7 @@ const validate = e => {
   }
 
   if (cvcField.value.length < 3) {
-    addError("CVC number is invalid, it must be 3 numbers long.");
+    addError("CVC number is invalid, it must be 3 digits long.");
     cvcField.classList.add("is-invalid");
   }
 
