@@ -30,7 +30,7 @@ const validate = e => {
 
   if (accountField.value < 1000000000000000) {
     //16 numbers
-    addError("Credit Card number is invalid, it must be 16 numbers long.");
+    addError("Credit Card number is invalid, it must be 16 digits long.");
     accountField.classList.add("is-invalid");
   }
 
