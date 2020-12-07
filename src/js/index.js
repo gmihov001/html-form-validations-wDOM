@@ -15,7 +15,7 @@ const validate = e => {
     .forEach(inp => inp.classList.remove("is-invalid"));
 
   var accountField = document.querySelector("#exampleAccount");
-  var cvcField = document.querySelector("#exampleCvc");
+  var ccvField = document.querySelector("#exampleCcv");
   var amountField = document.querySelector("#exampleAmount");
   var nameField = document.querySelector("#exampleFirst");
   var lastField = document.querySelector("#exampleLast");
@@ -29,7 +29,7 @@ const validate = e => {
     accountField.classList.add("is-invalid");
   }
 
-  if (cvcField.value.length < 3) {
+  if (ccvField.value.length < 3) {
     addError("CVC number is invalid, it must be 3 digits long.");
     cvcField.classList.add("is-invalid");
   }
